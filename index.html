@@ -1,40 +1,49 @@
-<div class="wrapper">
-  <canvas id="stars"></canvas>
-  <canvas id="yahia"></canvas>
-  <div class="container">
-    <div class="template color-yellow" data-template="home">
-      <main>
-        <h1><span>A 
-            <mark>21 years</mark> old</span><span> interaction designer</span></h1>
-        <div class="p"><span>hello@yahiarefaiea.com</span><span>(+963) 96 2295 406</span></div>
-        <div class="links">
-          <a class="link color-yellow" href="https://beta.yahiarefaiea.com/#bucket" title="View my bucket list" target="_blank">View my bucket list</a>
-          <a class="link color-green" href="https://beta.yahiarefaiea.com/#secret" title="Tell me a secret" target="_blank">Tell me a secret</a>
-          <a class="link color-red" href="https://beta.yahiarefaiea.com/Yahia_Refaiea_Resume.pdf" title="Download my résumé" target="_blank">Download my résumé</a>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.3/mobile-detect.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r72/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+  </head>
+    <body>
+        <div class="wrapper">
+        <canvas id="stars"></canvas>
+        <canvas id="yahia"></canvas>
+        <div class="container">
+          <div class="template color-yellow" data-template="home">
+            <main>
+              <h1><span>A
+                  <mark>21 years</mark> old</span><span> interaction designer</span></h1>
+              <div class="p"><span>hello@yahiarefaiea.com</span><span>(+963) 96 2295 406</span></div>
+              <div class="links">
+                <a class="link color-yellow" href="https://beta.yahiarefaiea.com/#bucket" title="View my bucket list" target="_blank">View my bucket list</a>
+                <a class="link color-green" href="https://beta.yahiarefaiea.com/#secret" title="Tell me a secret" target="_blank">Tell me a secret</a>
+                <a class="link color-red" href="https://beta.yahiarefaiea.com/Yahia_Refaiea_Resume.pdf" title="Download my résumé" target="_blank">Download my résumé</a>
+              </div>
+            </main>
+            <footer>
+              <div class="links"><a class="link small alt" href="http://facebook.com/YahiaRefaiea" title="Facebook (@YahiaRefaiea)" target="_blank">Facebook</a><a class="link small alt" href="http://twitter.com/YahiaRefaiea" title="Twitter (@YahiaRefaiea)" target="_blank">Twitter</a><a class="link small alt" href="http://codepen.io/YahiaRefaiea" title="Codepen (@YahiaRefaiea)" target="_blank">Codepen</a><a class="link small alt" href="http://github.com/YahiaRefaiea" title="GitHub (@YahiaRefaiea)" target="_blank">GitHub</a></div>
+            </footer>
+          </div>
+          <div class="loading" id="identity" title="Yahia Refaiea identity">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <a class="loading" id="signature" href="https://beta.yahiarefaiea.com/" title="Go to home" target="_blank"></a>
         </div>
-      </main>
-      <footer>
-        <div class="links"><a class="link small alt" href="http://facebook.com/YahiaRefaiea" title="Facebook (@YahiaRefaiea)" target="_blank">Facebook</a><a class="link small alt" href="http://twitter.com/YahiaRefaiea" title="Twitter (@YahiaRefaiea)" target="_blank">Twitter</a><a class="link small alt" href="http://codepen.io/YahiaRefaiea" title="Codepen (@YahiaRefaiea)" target="_blank">Codepen</a><a class="link small alt" href="http://github.com/YahiaRefaiea" title="GitHub (@YahiaRefaiea)" target="_blank">GitHub</a></div>
-      </footer>
-    </div>
-    <div class="loading" id="identity" title="Yahia Refaiea identity">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    <a class="loading" id="signature" href="https://beta.yahiarefaiea.com/" title="Go to home" target="_blank"></a>
-  </div>
-</div>
+      </div>
+    </body>
 
-<style>
-/*
+    <style media="screen">
+      /*
  *  yahiarefaiea-official-website-beta 1.0.0
- *  
+ *
  *  I’m a 21 years old handsome guy who grows up in a small town in Syria.
  *  http://beta.yahiarefaiea.com/
  *  hello@yahiarefaiea.com
- *  
+ *
  *  Last update on: 2018/10/24
  *  ©2018 Yahia Refaiea. all rights reserved.
  */
@@ -371,15 +380,15 @@
 }
 .mCSB_scrollTools .mCSB_buttonUp {
   background-position: 0 0;
-/* 
-		sprites locations 
+/*
+		sprites locations
 		light: 0 0, -16px 0, -32px 0, -48px 0, 0 -72px, -16px -72px, -32px -72px
 		dark: -80px 0, -96px 0, -112px 0, -128px 0, -80px -72px, -96px -72px, -112px -72px
 		*/
 }
 .mCSB_scrollTools .mCSB_buttonDown {
   background-position: 0 -20px;
-/* 
+/*
 		sprites locations
 		light: 0 -20px, -16px -20px, -32px -20px, -48px -20px, 0 -92px, -16px -92px, -32px -92px
 		dark: -80px -20px, -96px -20px, -112px -20px, -128px -20px, -80px -92px, -96px -92px, -112 -92px
@@ -387,16 +396,16 @@
 }
 .mCSB_scrollTools .mCSB_buttonLeft {
   background-position: 0 -40px;
-/* 
-		sprites locations 
+/*
+		sprites locations
 		light: 0 -40px, -20px -40px, -40px -40px, -60px -40px, 0 -112px, -20px -112px, -40px -112px
 		dark: -80px -40px, -100px -40px, -120px -40px, -140px -40px, -80px -112px, -100px -112px, -120px -112px
 		*/
 }
 .mCSB_scrollTools .mCSB_buttonRight {
   background-position: 0 -56px;
-/* 
-		sprites locations 
+/*
+		sprites locations
 		light: 0 -56px, -20px -56px, -40px -56px, -60px -56px, 0 -128px, -20px -128px, -40px -128px
 		dark: -80px -56px, -100px -56px, -120px -56px, -140px -56px, -80px -128px, -100px -128px, -120px -128px
 		*/
@@ -6782,14 +6791,15 @@ form .small .status > *:nth-child(2),
 .notFound #yahia {
   filter: grayscale(1);
 }
-<script>
-/*
+    </style>
+    <script type="text/javascript">
+      /*
  *  yahiarefaiea-official-website-beta 1.0.0
- *  
+ *
  *  I’m a 21 years old handsome guy who grows up in a small town in Syria.
  *  http://beta.yahiarefaiea.com/
  *  hello@yahiarefaiea.com
- *  
+ *
  *  Last update on: 2018/10/24
  *  ©2018 Yahia Refaiea. all rights reserved.
  */
@@ -7444,5 +7454,5 @@ function loadProject() {
 };
 
 loadProject();
-</script>
-</style>
+    </script>
+</html>
