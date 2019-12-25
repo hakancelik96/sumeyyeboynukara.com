@@ -1340,28 +1340,6 @@ img {
   background: transparent;
   color: inherit;
 }
-.wrapper {
-  /* overflow: hidden; */
-  /* height: 100%; */
-  z-index: 1;
-  /* min-height: 500px; */
-  /* cursor: move; */
-  /* cursor: grab; */
-  cursor: -moz-grab;
-  /* cursor: -webkit-grab; */
-}
-.wrapper:active {
-  cursor: grabbing;
-  cursor: -moz-grabbing;
-  cursor: -webkit-grabbing;
-}
-.wrapper .container {
-  /* position: relative; */
-  /* width: 90%; */
-  /* max-width: 1000px; */
-  /* height: 100%; */
-  /* margin: 0 auto; */
-}
 .mCustomScrollBox,
 .mCSB_container {
   overflow: visible;
@@ -2341,47 +2319,26 @@ textarea {
   }
 }
 #signature {
-  position: absolute;
-  top: 16px;
-  left: 34%;
-  height: 28px;
-  font-size: 36px;
-  font-weight: 900;
+  -webkit-animation: op 1.4s steps(43) forwards;
+  animation: op 1.4s steps(43) forwards;
+  text-align: center;
+  margin-top: 26px;
 }
-#signature:not(.loading) {
-  -webkit-animation: signatureAnimation 1.4s steps(43) forwards;
-  animation: signatureAnimation 1.4s steps(43) forwards;
+@-webkit-keyframes op {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
-@-moz-keyframes signatureAnimation {
-  100% {
-    background-position: 0 -1204px;
-  }
-}
-@-webkit-keyframes signatureAnimation {
-  100% {
-    background-position: 0 -1204px;
-  }
-}
-@-o-keyframes signatureAnimation {
-  100% {
-    background-position: 0 -1204px;
-  }
-}
-@keyframes signatureAnimation {
-  100% {
-    background-position: 0 -1204px;
-  }
+
+/* Standard syntax */
+@keyframes op {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 canvas {
   position: absolute;
   top: 2%;
   right: 0%;
 }
-/* @media (max-width: 991px) {
-  #yahia {
-    display: none;
-  }
-} */
 form:not(.validated) a.link:not(.small),
 .form:not(.validated) a.link:not(.small) {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -2506,13 +2463,13 @@ form .small .status > *:nth-child(2),
   }
 }
 .template {
-  /* display: none; */
-  /* position: absolute; */
-  /* top: 0; */
-  /* left: 0; */
-  /* bottom: 0; */
-  /* right: 0; */
-  /* white-space: nowrap; */
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  white-space: nowrap;
 }
 .template main {
   position: absolute;
@@ -2554,7 +2511,7 @@ form .small .status > *:nth-child(2),
   left: 10%;
   bottom: 28px;
 }
-.template h1 > * {
+h1 > * {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   opacity: 0;
@@ -2564,13 +2521,13 @@ form .small .status > *:nth-child(2),
   -webkit-animation: lineNum2 0.7s cubic-bezier(0.19, 1, 0.22, 1) forwards;
   animation: lineNum2 0.7s cubic-bezier(0.19, 1, 0.22, 1) forwards;
 }
-.template h1 > *:nth-child(1) {
+h1 > *:nth-child(1) {
   -webkit-animation-duration: 0.763648s;
   animation-duration: 0.763648s;
   -webkit-animation-delay: 0.063648s;
   animation-delay: 0.063648s;
 }
-.template h1 > *:nth-child(2) {
+h1 > *:nth-child(2) {
   -webkit-animation-duration: 0.79739392s;
   animation-duration: 0.79739392s;
   -webkit-animation-delay: 0.09739392s;
@@ -2930,7 +2887,7 @@ form .small .status > *:nth-child(2),
     transform: translateY(-70px) rotate(-5deg);
   }
 }
-.template h1 > * mark:before,
+h1 > * mark:before,
 .template .h1 > * mark:before {
   right: 100%;
   -webkit-animation: markAnimation 0.7s cubic-bezier(0.19, 1, 0.22, 1) 0.35s forwards;
@@ -4144,9 +4101,7 @@ form .small .status > *:nth-child(2),
     transform: translateY(-70px) rotate(-5deg);
   }
 }
-.wrapper.secret {
-  min-width: 390px;
-}
+
 .template[data-template=opinion] .form .field > * {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
@@ -4711,9 +4666,7 @@ form .small .status > *:nth-child(2),
     transform: translateY(-70px) rotate(-5deg);
   }
 }
-.wrapper.opinion {
-  min-width: 390px;
-}
+
 .template[data-template=bucket] .small > * {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
@@ -5433,9 +5386,7 @@ form .small .status > *:nth-child(2),
 .template[data-template=bucket] .small {
   margin-bottom: 7px;
 }
-.wrapper.bucket {
-  min-width: 380px;
-}
+
 .template[data-template=bucketAll] .small > * {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
@@ -6721,7 +6672,6 @@ form .small .status > *:nth-child(2),
 }
 .notFound #identity,
 .notFound #signature,
-.notFound #stars,
 .notFound #yahia {
   filter: grayscale(1);
 }
